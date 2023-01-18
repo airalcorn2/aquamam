@@ -1,0 +1,15 @@
+.idea
+__pycache__
+cube
+cylinder
+*.zip
+pascal3d
+pascal3d_demo
+symmetric_solids
+*.log
+*.pydict
+*.pth
+shapenet
+*.npy
+ModelNet10-SO3
+.gcp_config

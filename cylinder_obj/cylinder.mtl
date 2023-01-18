@@ -1,0 +1,6 @@
+newmtl texture
+Ka 1.0 1.0 1.0
+Kd 0.5 0.5 0.5
+Ks 0.0 0.0 0.0
+Ns 10.0
+illum 2
