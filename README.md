@@ -4,7 +4,7 @@
 
 This is the repository for the paper:
 
->[Michael A. Alcorn](https://sites.google.com/view/michaelaalcorn). [**AQuaMaM**: An Autoregressive, Quaternion Manifold Model for Rapidly Estimating Complex **SO(3)** Distributions](https://arxiv.org/abs/2104.11980). arXiv. 2023.
+>[Michael A. Alcorn](https://sites.google.com/view/michaelaalcorn). [**AQuaMaM**: An Autoregressive, Quaternion Manifold Model for Rapidly Estimating Complex **SO**(3) Distributions](https://arxiv.org/abs/2301.08838). arXiv. 2023.
 
 | <img src="images/die_5_dist.png" width="350"> | <img src="images/die_361_dist.png" width="350"> | <img src="images/cylinder_dist.png" width="350"> |
 |:--:|:--:|:--:|
@@ -58,7 +58,7 @@ If you use this code for your own research, please cite:
 @article{alcorn2023aquamam,
    title={AQuaMaM: An Autoregressive, Quaternion Manifold Model for Rapidly Estimating Complex SO(3) Distributions},
    author={Alcorn, Michael A.},
-   journal={arXiv preprint arXiv:2104.11980},
+   journal={arXiv preprint arXiv:2301.08838},
    year={2023}
 }
 ```
