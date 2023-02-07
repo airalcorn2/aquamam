@@ -48,7 +48,8 @@ A similar procedure is used by AQuaMaM to obtain the probability of a unit quate
 | (a) | (b) |
 
 AQuaMaM can model distributions on other kinds of manifolds too.
-For example, the left plots in (a) and (b) show the true density on a sphere for a mixture of two [von Mises–Fisher distributions](https://en.wikipedia.org/wiki/Von_Mises%E2%80%93Fisher_distribution) with the viewpoints of (a) and (b) being centered on the two modes, while the right plots in (a) and (b) show the density learned by AQuaMaM Jr. (a slight modification of the AQuaMaM architecture; see the Colab notebook [here](https://colab.research.google.com/drive/14ewJABsrOBkFVqjIkUt5xrBBdtNdRa9U?usp=sharing)).
+The left plots in (a) and (b) show the true density on a sphere for a mixture of two [von Mises–Fisher distributions](https://en.wikipedia.org/wiki/Von_Mises%E2%80%93Fisher_distribution) with the viewpoints being centered on the two modes.
+The right plots show the density learned by AQuaMaM Jr. (a slight modification of the AQuaMaM architecture; see the Colab notebook [here](https://colab.research.google.com/drive/14ewJABsrOBkFVqjIkUt5xrBBdtNdRa9U?usp=sharing)).
 
 ## Citation
 
