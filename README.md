@@ -100,3 +100,13 @@ MODEL=aquamam
 DATASET=die
 python3 evaluate.py ${MODEL} ${DATASET}
 ```
+
+## Learning a "peak" distribution
+
+Following "[Delving into Discrete Normalizing Flows on SO(3) Manifold for Probabilistic Rotation Modeling](https://pku-epic.github.io/RotationNormFlow/)", I trained AQuaMaM on a "peak" distribution(Colab notebook [here](https://colab.research.google.com/drive/1cGOBfaUR2bxfJLefo_oQSlb_5Gfu5nj8?usp=sharing)).
+On this distribution, the discrete normalizing flow model reached a log-likelihood of 13.93 with the next closest baseline model reaching 13.47 (see Table 1 in their paper).
+In comparison, AQuaMaM reached a log-likelihood of 29.51.
+This performance is a direct consequence of AQuaMaM's formulation, and is discussed in Section 2.4 of the manuscript:
+
+>As a final point, it is worth noting that the last term in Equation 4 is bounded below such that $`\frac{N q_{w}}{2 ω_{q_{y}} ω_{q_{z}}} \geq \frac{N^{3} q_{w}}{8}`$, i.e., for a given $`π_{q_{x}} π_{q_{y}} π_{q_{z}}`$, the likelihood increases *at least* cubically with the number of bins.
+>For 50,257 bins (i.e., the size of GPT-2/3’s vocabulary), `$N^{3} = 1.26 \times 10^{14}`$.
