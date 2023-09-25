@@ -103,7 +103,7 @@ python3 evaluate.py ${MODEL} ${DATASET}
 
 ## Learning a "peak" distribution
 
-Following "[Delving into Discrete Normalizing Flows on SO(3) Manifold for Probabilistic Rotation Modeling](https://pku-epic.github.io/RotationNormFlow/)", I trained AQuaMaM on a "peak" distribution(Colab notebook [here](https://colab.research.google.com/drive/1cGOBfaUR2bxfJLefo_oQSlb_5Gfu5nj8?usp=sharing)).
+Following "[Delving into Discrete Normalizing Flows on SO(3) Manifold for Probabilistic Rotation Modeling](https://pku-epic.github.io/RotationNormFlow/)", I trained AQuaMaM on a "peak" distribution (Colab notebook [here](https://colab.research.google.com/drive/1cGOBfaUR2bxfJLefo_oQSlb_5Gfu5nj8?usp=sharing)).
 On this distribution, the discrete normalizing flow model reached a log-likelihood of 13.93 with the next closest baseline model reaching 13.47 (see Table 1 in their paper).
 In comparison, AQuaMaM reached a log-likelihood of 29.51.
 This performance is a direct consequence of AQuaMaM's formulation, and is discussed in Section 2.4 of the manuscript:
