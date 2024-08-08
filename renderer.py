@@ -66,7 +66,7 @@ def parse_obj_file(input_obj):
         parts = line.split("#")[0].strip().split()
         elem_type = parts[0]
         if elem_type in data:
-            vals = np.array(parts[1:4], dtype=np.float)
+            vals = np.array(parts[1:4], dtype=float)
             if elem_type == "v":
                 min_vec = np.minimum(min_vec, vals)
                 max_vec = np.maximum(max_vec, vals)
@@ -74,7 +74,7 @@ def parse_obj_file(input_obj):
                 vals /= np.linalg.norm(vals)
             elif elem_type == "vt":
                 if len(vals) < 3:
-                    vals = np.array(list(vals) + [0.0], dtype=np.float)
+                    vals = np.array(list(vals) + [0.0], dtype=float)
 
             data[elem_type].append(vals)
         elif elem_type == "f":
@@ -146,7 +146,7 @@ def parse_mtl_file(input_mtl):
         parts = line.split()
         elem_type = parts[0]
         if elem_type in vector_elems:
-            vals = np.array(parts[1:4], dtype=np.float)
+            vals = np.array(parts[1:4], dtype=float)
             mtl_infos[current_mtl][elem_type] = tuple(vals)
         elif elem_type in float_elems:
             mtl_infos[current_mtl][elem_type] = float(parts[1])

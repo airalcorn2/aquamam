@@ -28,12 +28,13 @@ def main(which_obj):
     obj_mtl_path = f"{which_obj}_obj/{which_obj}"
     renderer.set_up_obj(f"{obj_mtl_path}.obj", f"{obj_mtl_path}.mtl")
     image = renderer.render(0.0, 0.0, 0.0).resize(
-        (IMG_SIZE, IMG_SIZE), resample=Image.LANCZOS
+        (IMG_SIZE, IMG_SIZE), resample=Image.Resampling.LANCZOS
     )
     image.show()
 
     data_dir = which_obj
-    dataset2samples = {"train": 500000, "valid": 10000, "test": 10000}
+    # dataset2samples = {"train": 500000, "valid": 10000, "test": 10000}
+    dataset2samples = {"train": 100, "valid": 100, "test": 100}
     for (dataset, samples) in dataset2samples.items():
         imgs_dir = f"{data_dir}/images/{dataset}"
         os.makedirs(imgs_dir)
@@ -50,7 +51,7 @@ def main(which_obj):
 
             renderer.prog["R_obj"].write(Rs[samp].T.astype("f4").tobytes())
             image = renderer.render(0.0, 0.0, 0.0).resize(
-                (IMG_SIZE, IMG_SIZE), resample=Image.LANCZOS
+                (IMG_SIZE, IMG_SIZE), resample=Image.Resampling.LANCZOS
             )
             img_f = f"{str(samp).zfill(z_len)}.png"
             image.save(f"{imgs_dir}/{img_f}")

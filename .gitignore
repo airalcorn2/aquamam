@@ -13,3 +13,4 @@ shapenet
 *.npy
 ModelNet10-SO3
 .gcp_config
+.python-version

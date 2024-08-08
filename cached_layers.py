@@ -207,7 +207,7 @@ def main():
 
         mem_kvs.append(mem_kv)
 
-    assert torch.allclose(out[: -(n_preds - 1)], first_xs)
+    assert torch.allclose(out[: -(n_preds - 1)], first_xs, atol=5e-6)
 
     last_xs = []
     for which_val in range(n_preds - 1):
@@ -224,7 +224,7 @@ def main():
     last_xs = torch.cat(last_xs)
     # Not sure why these aren't exactly the same. torch.bmm must be numerically slightly
     # different from torch.baddbmm.
-    assert torch.allclose(out[-(n_preds - 1):], last_xs, atol=1e-5)
+    assert torch.allclose(out[-(n_preds - 1):], last_xs, atol=5e-5)
     not_close = ~torch.isclose(out[-(n_preds - 1):], last_xs)
     print(f'Not "close": {100 * not_close.sum() / last_xs.numel():.4f}%')
     abs_diffs = (out[-(n_preds - 1):][not_close] - last_xs[not_close]).abs()

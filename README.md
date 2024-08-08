@@ -87,7 +87,7 @@ Run the following script, editing the variables as appropriate. To change the mo
 
 ```bash
 MODEL=aquamam
-DATASET=die
+DATASET=cube
 nohup python3 train.py ${MODEL} ${DATASET} > ${MODEL}_${DATASET}.log &
 ```
 
@@ -97,7 +97,7 @@ Run the following script, editing the variables as appropriate.
 
 ```bash
 MODEL=aquamam
-DATASET=die
+DATASET=cube
 python3 evaluate.py ${MODEL} ${DATASET}
 ```
 
