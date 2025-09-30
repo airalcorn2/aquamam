@@ -4,7 +4,7 @@
 
 This is the repository for the paper:
 
->[Michael A. Alcorn](https://sites.google.com/view/michaelaalcorn). [**AQuaMaM**: An Autoregressive, Quaternion Manifold Model for Rapidly Estimating Complex **SO**(3) Distributions](https://arxiv.org/abs/2301.08838). arXiv. 2023.
+>[Michael A. Alcorn](https://sites.google.com/view/michaelaalcorn). [**AQuaMaM**: An Autoregressive, Quaternion Manifold Model for Rapidly Estimating Complex **SO**(3) Distributions](https://arxiv.org/abs/2301.08838). NeurIPS Workshop on Non-Euclidean Foundation Models and Geometric Learning Workshop. 2025.
 
 | <img src="images/die_5_dist.png" width="350"> | <img src="images/die_361_dist.png" width="350"> | <img src="images/cylinder_dist.png" width="350"> |
 |:--:|:--:|:--:|
@@ -56,11 +56,11 @@ The right plots show the density learned by AQuaMaM Jr. (a slight modification o
 If you use this code for your own research, please cite:
 
 ```
-@article{alcorn2023aquamam,
+@article{alcorn2025aquamam,
    title={AQuaMaM: An Autoregressive, Quaternion Manifold Model for Rapidly Estimating Complex SO(3) Distributions},
    author={Alcorn, Michael A.},
-   journal={arXiv preprint arXiv:2301.08838},
-   year={2023}
+   journal={NeurIPS Workshop on Non-Euclidean Foundation Models and Geometric Learning Workshop},
+   year={2025}
 }
 ```
 
