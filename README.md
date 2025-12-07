@@ -59,7 +59,7 @@ If you use this code for your own research, please cite:
 @article{alcorn2025aquamam,
    title={AQuaMaM: An Autoregressive, Quaternion Manifold Model for Rapidly Estimating Complex SO(3) Distributions},
    author={Alcorn, Michael A.},
-   journal={NeurIPS Workshop on Non-Euclidean Foundation Models and Geometric Learning Workshop},
+   journal={NeurIPS Workshop on Non-Euclidean Foundation Models and Geometric Learning},
    year={2025}
 }
 ```
