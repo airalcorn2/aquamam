@@ -110,3 +110,13 @@ This performance is a direct consequence of AQuaMaM's formulation, and is discus
 
 >As a final point, it is worth noting that the last term in Equation 4 is bounded below such that $`\frac{N q_{w}}{2 ω_{q_{y}} ω_{q_{z}}} \geq \frac{N^{3} q_{w}}{8}`$, i.e., for a given $`π_{q_{x}} π_{q_{y}} π_{q_{z}}`$, the likelihood increases *at least* cubically with the number of bins.
 >For 50,257 bins (i.e., the size of GPT-2/3's vocabulary), $`N^{3} = 1.26 \times 10^{14}`$.
+
+## AQuaMaM Tide
+
+This Tide variant of AQuaMaM scales the range of the output bins given the prior components, e.g., if $q_{x} = 0.77$, then the bins for AQuaMaM and AQuaMaM Tide woud look like:
+
+<p align="center">
+<img width="422" height="171" alt="AQuaMaM-Tide" src="https://github.com/user-attachments/assets/cad5ff6e-d01c-4ff4-b01c-ad712789dc3a" />
+</p>
+
+This design choice considerably simplifies sampling and likelihood calcuations (Colab notebook [here](https://colab.research.google.com/drive/1MJ8tgpLqpFOw-AYQAFiacH3ZGykGQ6eD?usp=sharing)).
